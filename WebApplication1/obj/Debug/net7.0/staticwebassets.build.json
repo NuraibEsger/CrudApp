@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "xavMr6QCnf5J6Nl9/lQCsgxoXR1Q1qejfx7ESaoLH8A=",
+  "Source": "WebApplication1",
+  "BasePath": "_content/WebApplication1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication1\\wwwroot",
+      "Source": "WebApplication1",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebApplication1.styles.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "WebApplication1.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\bundle\\WebApplication1.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "WebApplication1.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "img/photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "img/pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png"
+    }
+  ]
+}
