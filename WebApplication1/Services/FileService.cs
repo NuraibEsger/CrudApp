@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Services
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace WebApplication1.Services
 {
     public class FileService
     {
@@ -8,6 +10,11 @@
         {
             if (!Directory.Exists(_path)) { Directory.CreateDirectory(_path); }
 
+            if (file == null)
+            {
+                // Handle the case when the file is null (e.g., return an error message or throw an exception)
+                return "Error: File is null.";
+            }
 
             FileInfo fileInfo = new FileInfo(file.FileName);
             var imageName = file.FileName + Guid.NewGuid().ToString() + fileInfo.Extension;

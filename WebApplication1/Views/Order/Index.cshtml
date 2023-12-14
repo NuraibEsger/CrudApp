@@ -10,13 +10,13 @@
     {
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Name: @orders.Product.Name</h5>
-                <h5 class="card-title">Email: @orders.Customer.Name</h5>
+                <h5 class="card-title">Product Name: @orders?.Product?.Name</h5>
+                <h5 class="card-title">Customer Email: @orders?.Customer?.Email</h5>
             </div>
 
             <div class="card-body">
-                <a asp-controller="Order" asp-action="Delete" asp-route-id="@orders.Id" class="btn btn-danger">Delete</a>
-                <a asp-controller="Order" asp-action="Update" asp-route-id="@orders.Id" class="btn btn-warning">Update</a>
+                <a asp-controller="Order" asp-action="Delete" asp-route-id="@orders?.Id" class="btn btn-danger">Delete</a>
+                <a asp-controller="Order" asp-action="Update" asp-route-id="@orders?.Id" class="btn btn-warning">Update</a>
             </div>
         </div>
     }

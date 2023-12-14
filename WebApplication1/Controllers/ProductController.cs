@@ -57,7 +57,7 @@ namespace WebApplication1.Controllers
                 return View(model);
             }
 
-            var imageName = _fileService.UploadFile(model.Photo);
+            var imageName = _fileService.UploadFile(model.Photo!);
 
             var product = new Product
             {
@@ -81,7 +81,7 @@ namespace WebApplication1.Controllers
 
             if (product is null) NotFound();
 
-            _dbContext.Products.Remove(product);
+            _dbContext.Products.Remove(product!);
             _dbContext.SaveChanges();
 
             return RedirectToAction(nameof(Index));
@@ -98,11 +98,11 @@ namespace WebApplication1.Controllers
 
             var categories = _dbContext.Categories.ToList();
 
-            var model = new ProductUptadeVM
+            var model = new ProductUpdateVM
             {
                 Name = product.Name,
                 Price = product.Price,
-                CategoryId = product.Category.Id,
+                CategoryId = product.Category!.Id,
                 ImageName = product.ProductImage?.ImageName,
                 Categories = categories.Select(x => new SelectListItem
                 {
@@ -111,6 +111,31 @@ namespace WebApplication1.Controllers
                 }).ToList(),
             };
             return View(model);
+        }
+        [HttpPost]
+        public IActionResult Update(ProductUpdateVM model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var product = _dbContext.Products.Include(x => x.ProductImage).FirstOrDefault(x => x.Id == model.Id);
+            if (product is null) return NotFound();
+
+            if (model.Photo != null)
+            {
+                if (product.ProductImage != null)
+                {
+                    _fileService.DeleteFile(product.ProductImage.ImageName!);
+                }
+                product.ProductImage!.ImageName = _fileService.UploadFile(model.Photo);
+            }
+            product.Name = model.Name;
+            product.Price = (decimal)model.Price;
+            product.CategoryId = model.CategoryId;
+
+            _dbContext.Products.Update(product);
+            _dbContext.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
