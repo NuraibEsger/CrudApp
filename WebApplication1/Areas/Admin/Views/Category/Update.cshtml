@@ -1,0 +1,17 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model CategoryUpdateVM
+
+<form asp-controller="Category" asp-action="Update" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="1" class="form-label">Product Count</label>
+            <input asp-for="CategoryName" type="text" class="form-control" id="1">
+        </div>
+    </div>
+
+    <input asp-for="Id" type="hidden">
+    <br />
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Uptade Category</button>
+    </div>
+</form>

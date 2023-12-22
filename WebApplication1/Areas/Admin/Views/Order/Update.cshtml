@@ -1,0 +1,23 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model OrderUpdateVM
+
+<form asp-controller="Order" asp-action="Update" method="post" class="row g-3" enctype="multipart/form-data">
+
+    <input asp-for="Id" type="hidden">
+    <div class="col-md-4">
+        <label for="4" class="form-label">Customer Name</label>
+        <select asp-for="CustomerId" asp-items="@Model.Customers">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="4" class="form-label">Product Name</label>
+        <select asp-for="ProductId" asp-items="@Model.Products">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <br />
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Update Order</button>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model CustomerAddVM
+
+<form asp-controller="Customer" asp-action="Add" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="1" class="form-label">Customer's Name'</label>
+            <input asp-for="Name" type="text" class="form-control" id="1">
+            <label for="2" class="form-label">Customer's Surname</label>
+            <input asp-for="Surname" type="text" class="form-control" id="2">
+            <label for="3">Email address</label>
+            <input asp-for="Email" type="email" class="form-control" id="3" aria-describedby="emailHelp">
+        </div>
+    </div>
+    <br />
+    <div class="col row d-flex flex-row justify-content-between">
+        <button type="submit" class="btn btn-primary">Add Customer</button>
+    </div>
+</form>

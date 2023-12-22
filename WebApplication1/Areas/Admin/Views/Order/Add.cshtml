@@ -1,0 +1,22 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model OrderAddVM
+
+<form asp-controller="Order" asp-action="Add" method="post" class="row g-3" enctype="multipart/form-data">
+
+    <div class="col-md-4">
+        <label for="4" class="form-label">Customer Name</label>
+        <select asp-for="CustomerId" asp-items="@Model.Customers">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="4" class="form-label">Product Name</label>
+        <select asp-for="ProductId" asp-items="@Model.Products">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <br />
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Order</button>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model CategoryAddVM
+
+<form asp-controller="Category" asp-action="Add" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="1" class="form-label">Product Count</label>
+            <input asp-for="CategoryName" type="text" class="form-control" id="1">      
+        </div>
+    </div>
+    <br />
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add Category</button>
+    </div>
+</form>

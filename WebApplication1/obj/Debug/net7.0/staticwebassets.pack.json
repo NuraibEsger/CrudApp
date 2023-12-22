@@ -1,27 +1,35 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpg4923d179-245e-4ed3-99d0-428009a5ed03.jpg",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpg4923d179-245e-4ed3-99d0-428009a5ed03.jpg",
       "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpg4923d179-245e-4ed3-99d0-428009a5ed03.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpg6bc2455b-d706-4daf-ac54-10eb689004f7.jpg",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpg61879d19-2476-4431-93aa-13364f44db6e.jpg",
+      "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpg61879d19-2476-4431-93aa-13364f44db6e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpg6bc2455b-d706-4daf-ac54-10eb689004f7.jpg",
       "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpg6bc2455b-d706-4daf-ac54-10eb689004f7.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpgbf13045e-a2cf-413d-83f4-b0c171a0be0a.jpg",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpga8bd2611-03ac-483a-9f6b-8d7bcf8677c1.jpg",
+      "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpga8bd2611-03ac-483a-9f6b-8d7bcf8677c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpgbf13045e-a2cf-413d-83f4-b0c171a0be0a.jpg",
       "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpgbf13045e-a2cf-413d-83f4-b0c171a0be0a.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg",
       "PackagePath": "staticwebassets\\img\\photo_5305641502854205908_y.jpge33a116d-b52e-4fb3-888a-1fcac3ee6afc.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Code\\WebApplication1\\WebApplication1\\wwwroot\\img\\pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png",
+      "Id": "C:\\Users\\User\\Desktop\\Projects\\CrudApp\\WebApplication1\\wwwroot\\img\\pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png",
       "PackagePath": "staticwebassets\\img\\pngwing.com.png82575a8c-a6b4-41d1-9da4-72e61997f91d.png"
     },
     {

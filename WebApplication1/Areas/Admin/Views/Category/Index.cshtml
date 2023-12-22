@@ -1,0 +1,37 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model CategoryIndexVM
+
+<div class="row d-flex flex-row justify-content-between">
+    <h1>Category Page.</h1>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Go to Home page</a>
+</div>
+<br />
+<div class="d-flex flex-row justify-content-between">
+    @foreach (var category in Model.Categories)
+    {
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@category.CategoryName</h5>
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="card-body">
+                    <a asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger">Delete</a>
+                    <a asp-controller="Category" asp-action="Update" asp-route-id="@category.Id" class="btn btn-warning">Update</a>
+                </div>
+            }
+            else
+            {
+                <div class="card-body">
+                    <a class="btn btn-danger disabled">Delete</a>
+                    <a class="btn btn-warning disabled">Update</a>
+                </div>
+            }
+        </div>
+    }
+</div>
+<br />
+@if (User.IsInRole("Admin") || User.IsInRole("OridnaryUser"))
+{
+    <a class="btn btn-primary" asp-controller="Category" asp-action="Add">Go to Category Add page</a>
+}

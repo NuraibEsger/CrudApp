@@ -1,0 +1,48 @@
+﻿@using WebApplication1.Areas.Admin.Models;
+@model ProductIndexVM
+    
+<div class="row d-flex flex-row justify-content-between">
+    <h1>Product Page.</h1>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Go to Home page</a>
+</div>
+<br />
+<div class="d-flex flex-row justify-content-between">
+    @foreach(var product in Model.Products)
+    {
+        <div class="card" style="width: 18rem;">
+            @if (product.ProductImage is null)
+            {
+                <p class="card-text">No photo available</p>
+            }
+            else
+            {
+                <img src="~/img/@product.ProductImage.ImageName" />
+            }
+            <div class="card-body">
+                <h5 class="card-title">Name: @product.Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: @product.Price</li>
+                <li class="list-group-item">Category: @product.Category.CategoryName</li>
+            </ul>
+            <div class="card-body">
+                @if (User.IsInRole("Admin"))
+                {
+                    <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+                    <a asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn btn-warning">Update</a>
+                }
+                else
+                {
+                    <a class="btn btn-danger disabled">Delete</a>
+                    <a class="btn btn-warning disabled">Update</a>
+                }
+                
+            </div>
+        </div>
+    }
+</div>
+<br />
+@if (User.IsInRole("Admin") || User.IsInRole("OridnaryUser"))
+{
+    <a class="btn btn-primary" asp-controller="Product" asp-action="Add">Go to Product Add page</a>
+}

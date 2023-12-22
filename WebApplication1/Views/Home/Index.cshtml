@@ -1,7 +1,24 @@
-﻿
-
-    <h1>Hello Boss, Welcome :)</h1>
-    <a class="btn btn-primary" asp-controller="Product" asp-action="Index">Go to Products page</a>
-    <a class="btn btn-primary" asp-controller="Category" asp-action="Index">Go to Category page</a>
-    <a class="btn btn-primary" asp-controller="Customer" asp-action="Index">Go to Customer page</a>
-    <a class="btn btn-primary" asp-controller="Order" asp-action="Index">Go to Order page</a>
+﻿@using WebApplication1.Areas.Admin.Models;
+@model ProductIndexVM
+<div class="d-flex flex-row justify-content-between">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card" style="width: 18rem;">
+            @if (product.ProductImage is null)
+            {
+                <p class="card-text">No photo available</p>
+            }
+            else
+            {
+                <img src="~/img/@product.ProductImage.ImageName" />
+            }
+            <div class="card-body">
+                <h5 class="card-title">Name: @product.Name</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price: @product.Price</li>
+                <li class="list-group-item">Category: @product.Category.CategoryName</li>
+            </ul>
+        </div>
+    }
+</div>
